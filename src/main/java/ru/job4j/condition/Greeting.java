@@ -2,9 +2,9 @@ package ru.job4j.condition;
 
 public class Greeting {
     public static void main(String[] args) {
-        short s = 1500;
-        char c = (char) s;
-        double d = c;
-        System.out.println(d);
+        String idea = "I like Java!" + "But I am a newbie";
+        System.out.println(idea);
+        int year = 2021;
+        System.out.println(idea + year);
     }
 }
