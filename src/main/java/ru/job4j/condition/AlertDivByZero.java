@@ -1,7 +1,5 @@
 package ru.job4j.condition;
 
-import java.awt.*;
-
 public class AlertDivByZero {
 
     public static void main(String[] args) {
