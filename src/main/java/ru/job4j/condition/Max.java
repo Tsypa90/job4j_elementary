@@ -9,6 +9,6 @@ public class Max {
     }
 
     public static void main(String[] args) {
-        int max = Max.max(5, 2);
+        int max = Max.max(6, 5);
     }
 }
