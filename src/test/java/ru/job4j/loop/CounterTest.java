@@ -31,4 +31,13 @@ public class CounterTest {
         int expected = 0;
         Assert.assertEquals(expected, result);
     }
+
+    @Test
+    public void whenSumEvenNumbersFromOneToTwoThenTwo() {
+        int start = 1;
+        int finish = 2;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 2;
+        Assert.assertEquals(expected, result);
+    }
 }
