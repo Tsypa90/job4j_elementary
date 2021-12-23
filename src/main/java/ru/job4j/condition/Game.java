@@ -1,19 +1,21 @@
 package ru.job4j.condition;
 
 public class Game {
-    public static void menu(String name) {
-        if (name.equals("super mario")) {
-            System.out.println("Start - super mario");
+    public static String checkNumber(int number) {
+        String result;
+        if (number % 3 == 0 && number % 5 == 0) {
+            result = "Hello, World!!!!";
+        } else if (number % 3 == 0) {
+            result = "Hello";
+        } else if (number % 5 == 0) {
+            result = "World";
+        } else {
+            result = "Operation not support.";
         }
-        if (name.equals("tanks")) {
-            System.out.println("Start - tanks");
-        }
-        if (name.equals("tetris")) {
-            System.out.println("Start - tetris");
-        }
+        return result;
     }
 
     public static void main(String[] args) {
-        Game.menu("tanks");
+        System.out.println(checkNumber(9));
     }
 }
