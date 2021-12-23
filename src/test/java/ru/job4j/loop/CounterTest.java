@@ -22,4 +22,13 @@ public class CounterTest {
         int expected = 18;
         Assert.assertEquals(expected, result);
     }
+
+    @Test
+    public void whenSumEvenNumbersFromOneToOneThenZero() {
+        int start = 1;
+        int finish = 1;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 0;
+        Assert.assertEquals(expected, result);
+    }
 }
