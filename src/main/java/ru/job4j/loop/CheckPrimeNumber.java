@@ -16,8 +16,4 @@ public class CheckPrimeNumber {
         }
         return prime;
     }
-
-    public static void main(String[] args) {
-        CheckPrimeNumber.check(2);
-    }
 }
