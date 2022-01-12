@@ -127,4 +127,17 @@ public class MatrixCheckTest {
         boolean result = MatrixCheck.isWin(input);
         Assert.assertTrue(result);
     }
+
+    @Test
+    public void whenDataDiagonalTrue() {
+        char[][] input = {
+                {'X', ' ', ' ', ' ', ' '},
+                {' ', 'X', ' ', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', 'X', ' '},
+                {' ', ' ', 'X', ' ', 'X'},
+        };
+        boolean result = MatrixCheck.isWin(input);
+        Assert.assertTrue(result);
+    }
 }
