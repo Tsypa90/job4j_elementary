@@ -12,13 +12,9 @@ public class JavaNameValidator {
         } else {
             for (int i = 1; i < name.length(); i++) {
                 int code = name.codePointAt(i);
-                if (!isSpecialSymbol(code)) {
-                    if (!isUpperLatinLetter(code)) {
-                        if (!isLowerLatinLetter(code)) {
-                            rsl = false;
-                            break;
-                        }
-                    }
+                if (!(isSpecialSymbol(code) || isUpperLatinLetter(code) || isLowerLatinLetter(code))) {
+                    rsl = false;
+                    break;
                 }
             }
         }
